@@ -1,0 +1,155 @@
+<style>
+        :root {
+            --primary-color: #007bff;
+            --gradient-color-1: #6e45e2;
+            --gradient-color-2: #88d3ce;
+            --background-color: #f9f9f9;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, var(--gradient-color-1), var(--gradient-color-2));
+            color: white;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin: 0;
+        }
+
+        header p {
+            margin: 10px 0 20px;
+        }
+
+        header .button {
+            display: inline-block;
+            padding: 15px 30px;
+            color: white;
+            background-color: var(--primary-color);
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        header .button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 123, 255, 0.5);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 更新导航栏样式 */
+        nav {
+            display: flex;
+            justify-content: center; /* 居中对齐导航 */
+            margin-bottom: 20px; /* 增加与下方内容的间距 */
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px; /* 导航按钮间距 */
+            padding: 0;
+            margin: 0;
+            max-width: 900px; /* 确保导航宽度与正文对齐 */
+        }
+
+        nav ul li {
+            flex: none; /* 按钮宽度固定 */
+        }
+
+        nav ul li a {
+            display: inline-block;
+            text-align: center;
+            padding: 10px 15px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+            font-size: 0.9rem; /* 优化字体大小 */
+        }
+
+        nav ul li a:hover {
+            background: #0056b3;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: #f7f9fc;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        table th {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            background: #333;
+            color: white;
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: var(--gradient-color-2);
+            text-decoration: none;
+        }
+
+        /* 表格横向滚动支持 */
+        table {
+            display: block;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        /* 按钮在移动端优化 */
+        @media screen and (max-width: 767px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            header p {
+                font-size: 1rem;
+            }
+            .button {
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
+        }
+    </style>
